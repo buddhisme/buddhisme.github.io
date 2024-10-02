@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(250, 245, 239);
+    margin: 0;
+}
+
+.main-box{
+    background-color: white;
+    padding-top: 10px;
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 1000px;
+    padding-bottom: 10px;
+}
+
+iframe{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+}
+
+h2{
+    display: flex;
+    margin-left: 10px;
+}
+
+/* Container to hold image and overlay text */
+.image-container {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 2px;
+}
+
+/* Style the image */
+img {
+    display: block;
+    height: 200px;
+    width: 50%;
+    min-width: 400px;
+}
+
+/* Initially hide the text, set full width/height to cover image */
+.overlay-text {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    color: white;
+    width: 98%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Transition for smooth hover effect */
+    text-align: left;
+    padding: 10px;
+}
+
+/* Hover effect: show the text */
+.image-container:hover .overlay-text {
+    opacity: 1;
+}
+
+p, li, h3{
+    justify-content: left;
+    text-align: left;
+    padding-left: 10px;
+}
+
+table, th, td {
+    font-size: 20px;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.brahma{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: auto;
+}
